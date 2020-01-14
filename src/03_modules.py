@@ -12,6 +12,10 @@ import sys
 # YOUR CODE HERE
 print (sys.argv)
 
+print (len(sys.argv))
+
+print (sys.argv[0])
+
 # Print out the OS platform you're using:
 # YOUR CODE HERE
 print (sys.platform)
