@@ -5,6 +5,8 @@
 x = 12
 
 def change_x():
+    #To tell Python, that we want to use the global variable, we have to use the global keyword
+    global x
     x = 99
 
 change_x()
@@ -19,6 +21,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y 
         y = 999
 
     inner()
