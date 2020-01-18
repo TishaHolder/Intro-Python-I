@@ -1,6 +1,8 @@
 # For the exercise, look up the methods and functions that are available for use
 # with Python lists.
 
+"""lists or dictionaries are passed by reference. everything else is passed by value"""
+
 x = [1, 2, 3]
 y = [8, 9, 10]
 

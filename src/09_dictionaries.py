@@ -15,6 +15,8 @@ has the following keys:
  - name: a name string for this location
 """
 
+"""lists or dictionaries are passed by reference. everything else is passed by value"""
+
 waypoints = [
     {
         "lat": 43,

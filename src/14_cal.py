@@ -23,6 +23,8 @@ import sys
 import calendar
 from datetime import datetime
 
+#creates a new date ==> my_date = datetime.date(2020, 7, 6) <==format YEAR MONTH DAY
+
 now = datetime.now()
 year = now.year
 month = now.month

@@ -22,6 +22,10 @@ class Waypoint(LatLon):
         super().__init__(lat, lon) #we have overridden init with a Waypoint specific constructor    
         self.name = name        
 
+    #repr is used for unambiguous representation of the objecct and should be used for debugging and developer use
+    #str is meant to a more readable representation of an object and is used to display info to the end user
+    #if both are declared str will be used to print data
+    #can specify which one to use by using print(repr(object_name)) or print(str(object_name))
     def __str__(self):
         return 'Name: ' + self.name + ' Latitude: ' + str(self.lat) + ' Longitude:  ' + str(self.lon)
 
@@ -56,6 +60,10 @@ print(waypoint)
 geocache = Geocache("Newberry Views", 1.5, 2, 44.052137, -121.41556)
 # Print it--also make this print more nicely
 print(geocache)
+
+"""instance variables contain variables that are unique to each instace"""
+
+""" class variables are variables that are shared among all instances of a class"""
 
 """
 # Note that self is only used in the __init__()
